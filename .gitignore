@@ -1,0 +1,4 @@
+__pycache__
+formats/__pycache__
+*.xml
+*.fgfp
