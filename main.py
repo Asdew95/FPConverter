@@ -23,7 +23,7 @@ if args.input == "-":
     # This reads until EOF, or Ctrl + D
     input_contents = sys.stdin.read()
 else:
-    with open(args.input, "r") as f:
+    with open(args.input, "r", encoding="utf8") as f:
         input_contents = f.read()
 
 flightplan = import_formats[args.input_format].import_fp(input_contents)
